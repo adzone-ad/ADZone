@@ -18,24 +18,34 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/objective/ADZone'
+  TODO: Add long description of the pod here.
+  DESC
+  
+  s.homepage         = 'https://github.com/adzone-ad/ADZone'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'objective' => 'zgz682000@dingtalk.com' }
-  s.source           = { :git => 'https://github.com/objective/ADZone.git', :tag => s.version.to_s }
+  s.author           = { 'Aaron.L' => 'zgz682000@dingtalk.com' }
+  s.source           = { :git => 'https://github.com/adzone-ad/ADZone.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'ADZone/Classes/**/*'
+  
+  
+  
+  s.subspec 'ADZoneaggregate' do |ss|
+      ss.vendored_frameworks = 'ADZone/ADZoneaggregate/ADZone.framework'
+  end
+  
+  s.subspec 'AZPlatformtencent' do |ss|
+      ss.dependency 'ADZone/ADZoneaggregate'
+      ss.vendored_frameworks = 'ADZone/AZPlatformtencent/AZPlatformtencent.framework'
+      
+  end
   
   # s.resource_bundles = {
   #   'ADZone' => ['ADZone/Assets/*.png']
   # }
-
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

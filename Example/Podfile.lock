@@ -1,0 +1,32 @@
+PODS:
+  - ADZone (0.1.0):
+    - ADZone/ADZoneaggregate (= 0.1.0)
+    - ADZone/AZPlatformtencent (= 0.1.0)
+  - ADZone/ADZoneaggregate (0.1.0)
+  - ADZone/AZPlatformtencent (0.1.0):
+    - ADZone/ADZoneaggregate
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - ADZone (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ADZone:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ADZone: c64012d53441b53440fb6f3f4c0e59311846366a
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: c0058b3ebf635c75b3ea4daf6ff34164817cd6c2
+
+COCOAPODS: 1.8.3

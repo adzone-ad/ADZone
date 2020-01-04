@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0E0723CB6ECDF04F034E9252 /* Pods-ADZone_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADZone_Example.debug.xcconfig"; path = "Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		36A5EE0F4878E76FAD312CA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		36A5EE0F4878E76FAD312CA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		38A997B6B1F7421D498D04EC /* Pods-ADZone_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADZone_Example.release.xcconfig"; path = "Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4B48F9E19D99CA21E7130A6B /* ADZone.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ADZone.podspec; path = ../ADZone.podspec; sourceTree = "<group>"; };
+		4B48F9E19D99CA21E7130A6B /* ADZone.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ADZone.podspec; path = ../ADZone.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		54BA33A26F3DE8E68B4E1B86 /* Pods_ADZone_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADZone_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ADZone_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADZone_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		934FBBAA1C76495117BFF99D /* Pods_ADZone_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADZone_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4102E414BA6481ADEAF963 /* Pods-ADZone_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADZone_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE670E7433FAEDB3B2EA34D0 /* Pods-ADZone_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADZone_Tests.release.xcconfig"; path = "Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F9B32963D5ED4C5779EB0383 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F9B32963D5ED4C5779EB0383 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				BB4102E414BA6481ADEAF963 /* Pods-ADZone_Tests.debug.xcconfig */,
 				DE670E7433FAEDB3B2EA34D0 /* Pods-ADZone_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				32AA0C3F408714666B5D619F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -296,24 +295,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32AA0C3F408714666B5D619F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ADZone/ADZone.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADZone.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		32E424200C0F4FC73CFDFD9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
