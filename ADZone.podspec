@@ -34,6 +34,8 @@ Pod::Spec.new do |s|
   
   s.subspec 'ADZoneaggregate' do |ss|
       ss.vendored_frameworks = 'ADZone/ADZoneaggregate/ADZone.framework'
+      ss.dependency 'AFNetworking'
+      ss.dependency 'OpenUDID'
   end
   
   s.subspec 'AZPlatformtencent' do |ss|
@@ -42,11 +44,11 @@ Pod::Spec.new do |s|
       ss.frameworks = 'AdSupport', 'CoreLocation', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'Security', 'StoreKit', 'AVFoundation', 'WebKit'
       ss.libraries = 'z', 'xml2'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
-      
+      ss.dependency 'AFNetworking'
+      ss.dependency 'OpenUDID'
   end
   
-  s.dependency 'AFNetworking'
-  s.dependency 'OpenUDID'
+  
   
   # s.resource_bundles = {
   #   'ADZone' => ['ADZone/Assets/*.png']
