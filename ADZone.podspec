@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '9.0'
   
-  
+#  s.source_files = 'ADZone/**/*.{h,m}'
   
   s.subspec 'AdZoneAggregate' do |ss|
       ss.vendored_frameworks = 'ADZone/AdZoneAggregate/AdZoneAggregate.framework'
@@ -52,8 +52,10 @@ Pod::Spec.new do |s|
   s.subspec 'AdZonePlatformBaidu' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.resource  = 'ADZone/AdZonePlatformBaidu/lib/baidumobadsdk.bundle'
+      ss.vendored_frameworks =
+      'ADZone/AdZonePlatformBaidu/lib/BaiduMobAdSDK.framework',
+      'ADZone/AdZonePlatformBaidu/AdZonePlatformBaidu.framework'
       ss.frameworks = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
-      ss.vendored_frameworks = 'ADZone/AdZonePlatformBaidu/lib/BaiduMobAdSDK.framework','ADZone/AdZonePlatformBaidu/AdZonePlatformBaidu.framework'
       ss.libraries = 'c++'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   end
