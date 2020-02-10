@@ -1,0 +1,6 @@
+framework module AdZonePlatformInmobi {
+  umbrella header "AdZonePlatformInmobi.h"
+
+  export *
+  module * { export * }
+}

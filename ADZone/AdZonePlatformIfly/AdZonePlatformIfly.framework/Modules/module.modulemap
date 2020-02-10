@@ -1,0 +1,6 @@
+framework module AdZonePlatformIfly {
+  umbrella header "AdZonePlatformIfly.h"
+
+  export *
+  module * { export * }
+}

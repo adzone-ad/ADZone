@@ -1,0 +1,6 @@
+framework module AdZonePlatformBaidu {
+  umbrella header "AdZonePlatformBaidu.h"
+
+  export *
+  module * { export * }
+}

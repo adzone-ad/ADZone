@@ -1,0 +1,6 @@
+framework module AdZonePlatformGoogle {
+  umbrella header "AdZonePlatformGoogle.h"
+
+  export *
+  module * { export * }
+}

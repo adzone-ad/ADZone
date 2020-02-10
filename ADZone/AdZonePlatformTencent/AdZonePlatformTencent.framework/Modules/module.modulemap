@@ -1,0 +1,6 @@
+framework module AdZonePlatformTencent {
+  umbrella header "AdZonePlatformTencent.h"
+
+  export *
+  module * { export * }
+}

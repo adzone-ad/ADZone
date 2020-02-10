@@ -1,0 +1,6 @@
+framework module AdZoneAggregate {
+  umbrella header "AdZoneAggregate.h"
+
+  export *
+  module * { export * }
+}

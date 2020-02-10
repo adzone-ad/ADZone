@@ -1,6 +1,0 @@
-framework module AZPlatformtencent {
-  umbrella header "AZPlatformtencent.h"
-
-  export *
-  module * { export * }
-}

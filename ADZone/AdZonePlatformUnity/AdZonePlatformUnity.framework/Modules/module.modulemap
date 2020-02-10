@@ -1,0 +1,6 @@
+framework module AdZonePlatformUnity {
+  umbrella header "AdZonePlatformUnity.h"
+
+  export *
+  module * { export * }
+}

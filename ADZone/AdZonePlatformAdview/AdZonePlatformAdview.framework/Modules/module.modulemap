@@ -1,0 +1,6 @@
+framework module AdZonePlatformAdview {
+  umbrella header "AdZonePlatformAdview.h"
+
+  export *
+  module * { export * }
+}
