@@ -1,15 +1,60 @@
 PODS:
   - ADZone (0.1.0):
-    - ADZone/ADZoneaggregate (= 0.1.0)
-    - ADZone/AZPlatformtencent (= 0.1.0)
-  - ADZone/ADZoneaggregate (0.1.0)
-  - ADZone/AZPlatformtencent (0.1.0):
-    - ADZone/ADZoneaggregate
+    - ADZone/AdZoneAggregate (= 0.1.0)
+    - ADZone/AdZonePlatformAdview (= 0.1.0)
+    - ADZone/AdZonePlatformBaidu (= 0.1.0)
+    - ADZone/AdZonePlatformGoogle (= 0.1.0)
+    - ADZone/AdZonePlatformIfly (= 0.1.0)
+    - ADZone/AdZonePlatformInmobi (= 0.1.0)
+    - ADZone/AdZonePlatformMTG (= 0.1.0)
+    - ADZone/AdZonePlatformTencent (= 0.1.0)
+    - ADZone/AdZonePlatformTouTiao (= 0.1.0)
+    - ADZone/AdZonePlatformUnity (= 0.1.0)
+    - ADZone/AdZonePlatformVungle (= 0.1.0)
+  - ADZone/AdZoneAggregate (0.1.0):
+    - AFNetworking
+    - OpenUDID
+  - ADZone/AdZonePlatformAdview (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformBaidu (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformGoogle (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformIfly (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformInmobi (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformMTG (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformTencent (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformTouTiao (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformUnity (0.1.0):
+    - ADZone/AdZoneAggregate
+  - ADZone/AdZonePlatformVungle (0.1.0):
+    - ADZone/AdZoneAggregate
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - OpenUDID (1.0.0)
 
 DEPENDENCIES:
   - ADZone (from `../`)
@@ -17,15 +62,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - FBSnapshotTestCase
+    - OpenUDID
 
 EXTERNAL SOURCES:
   ADZone:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ADZone: c64012d53441b53440fb6f3f4c0e59311846366a
+  ADZone: 53de98baee3f82e810440fd7ff6a54a11ecf3a68
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
 
 PODFILE CHECKSUM: c0058b3ebf635c75b3ea4daf6ff34164817cd6c2
 

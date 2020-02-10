@@ -102,7 +102,6 @@
 				6003F593195388D20070C39A /* Example for ADZone */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
-				6003F58B195388D20070C39A /* Products */,
 				E6E91F2A7FDFEBF0381A2073 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +113,7 @@
 				6003F5AE195388D20070C39A /* ADZone_Tests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		6003F58C195388D20070C39A /* Frameworks */ = {
@@ -138,6 +138,7 @@
 				6003F5A5195388D20070C39A /* AZViewController.h */,
 				6003F5A6195388D20070C39A /* AZViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F58B195388D20070C39A /* Products */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -207,6 +208,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				B39DCD9E7D8694A8464FAD66 /* [CP] Embed Pods Frameworks */,
+				43C3A64F99300A20457F36BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,6 +316,30 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		43C3A64F99300A20457F36BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-resources.sh",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformAdview/lib/AdViewRes.bundle",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformBaidu/lib/baidumobadsdk.bundle",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformIfly/lib/IFLYPlayer.bundle",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformTouTiao/lib/BUAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AdViewRes.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IFLYPlayer.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8817B6A3CE0998BD441CA51B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +360,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39DCD9E7D8694A8464FAD66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/OpenUDID/OpenUDID.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenUDID.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CAEB676194906CFE711E77ED /* [CP] Check Pods Manifest.lock */ = {
@@ -497,6 +544,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADZone/ADZone-Prefix.pch";
 				INFOPLIST_FILE = "ADZone/ADZone-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +561,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADZone/ADZone-Prefix.pch";
 				INFOPLIST_FILE = "ADZone/ADZone-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
