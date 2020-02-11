@@ -209,7 +209,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				BC9BC7A66C126DCB6699749B /* [CP] Embed Pods Frameworks */,
-				545BF04EE845690083153B9D /* [CP] Copy Pods Resources */,
+				2ABD050796606FFCAB5ACC18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,25 +301,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32E424200C0F4FC73CFDFD9C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		545BF04EE845690083153B9D /* [CP] Copy Pods Resources */ = {
+		2ABD050796606FFCAB5ACC18 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,6 +323,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32E424200C0F4FC73CFDFD9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8817B6A3CE0998BD441CA51B /* [CP] Check Pods Manifest.lock */ = {
