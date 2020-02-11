@@ -209,7 +209,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				BC9BC7A66C126DCB6699749B /* [CP] Embed Pods Frameworks */,
-				FA19814DCB4478AF2D717520 /* [CP] Copy Pods Resources */,
+				545BF04EE845690083153B9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = objective;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = AM663T636R;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -316,6 +319,30 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Tests/Pods-ADZone_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		545BF04EE845690083153B9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-resources.sh",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformAdview/lib/AdViewRes.bundle",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformBaidu/lib/baidumobadsdk.bundle",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformIfly/lib/IFLYPlayer.bundle",
+				"${PODS_ROOT}/../../ADZone/AdZonePlatformTouTiao/lib/BUAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AdViewRes.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IFLYPlayer.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8817B6A3CE0998BD441CA51B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,30 +405,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA19814DCB4478AF2D717520 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-resources.sh",
-				"${PODS_ROOT}/../../ADZone/AdZonePlatformAdview/lib/AdViewRes.bundle",
-				"${PODS_ROOT}/../../ADZone/AdZonePlatformBaidu/lib/baidumobadsdk.bundle",
-				"${PODS_ROOT}/../../ADZone/AdZonePlatformIfly/lib/IFLYPlayer.bundle",
-				"${PODS_ROOT}/../../ADZone/AdZonePlatformTouTiao/lib/BUAdSDK.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AdViewRes.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IFLYPlayer.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADZone_Example/Pods-ADZone_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -541,6 +544,7 @@
 			baseConfigurationReference = 0E0723CB6ECDF04F034E9252 /* Pods-ADZone_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AM663T636R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADZone/ADZone-Prefix.pch";
 				INFOPLIST_FILE = "ADZone/ADZone-Info.plist";
@@ -559,6 +563,7 @@
 			baseConfigurationReference = 38A997B6B1F7421D498D04EC /* Pods-ADZone_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AM663T636R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADZone/ADZone-Prefix.pch";
 				INFOPLIST_FILE = "ADZone/ADZone-Info.plist";

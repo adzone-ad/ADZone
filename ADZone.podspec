@@ -44,22 +44,22 @@ Pod::Spec.new do |s|
       ss.vendored_frameworks = 'ADZone/AdZonePlatformAdview/AdZonePlatformAdview.framework'
       ss.vendored_libraries = 'ADZone/AdZonePlatformAdview/lib/libAdCompViewSDK.a'
       ss.resource  = 'ADZone/AdZonePlatformAdview/lib/AdViewRes.bundle'
-      ss.frameworks = 'CoreLocation', 'AddressBook', 'AdSupport'
+      ss.frameworks = 'CoreLocation', 'AddressBook', 'AdSupport','WebKit','StoreKit','CoreTelephony','AVFoundation','MediaPlayer','MessageUI'
       ss.libraries = 'c++', 'sqlite3', 'z', 'xml2'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC", }
   end
-  
+
   s.subspec 'AdZonePlatformBaidu' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.resource  = 'ADZone/AdZonePlatformBaidu/lib/baidumobadsdk.bundle'
       ss.vendored_frameworks =
       'ADZone/AdZonePlatformBaidu/lib/BaiduMobAdSDK.framework',
       'ADZone/AdZonePlatformBaidu/AdZonePlatformBaidu.framework'
-      ss.frameworks = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
+      ss.frameworks = 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport','WebKit'
       ss.libraries = 'c++'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   end
-  
+
   s.subspec 'AdZonePlatformGoogle' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.vendored_frameworks =
@@ -69,7 +69,7 @@ Pod::Spec.new do |s|
       'ADZone/AdZonePlatformGoogle/lib/nanopb.framework',
       'ADZone/AdZonePlatformGoogle/AdZonePlatformGoogle.framework'
   end
-  
+
   s.subspec 'AdZonePlatformIfly' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.source_files = 'ADZone/AdZonePlatformIfly/lib/*.{h,m}'
@@ -80,17 +80,17 @@ Pod::Spec.new do |s|
       ss.libraries = 'z'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   end
-  
+
   s.subspec 'AdZonePlatformInmobi' do |ss|
     ss.dependency 'ADZone/AdZoneAggregate'
     ss.vendored_frameworks =
     'ADZone/AdZonePlatformInmobi/lib/InMobiSDK.framework',
     'ADZone/AdZonePlatformInmobi/AdZonePlatformInmobi.framework'
     ss.frameworks = 'WebKit'
-    ss.libraries = 'sqlite3.0', 'z'
+    ss.libraries = 'sqlite3.0', 'z' ,'xml2'
     ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   end
-  
+
   s.subspec 'AdZonePlatformMTG' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.vendored_frameworks =
@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
       ss.libraries = 'sqlite3', 'z'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   end
-  
+
   s.subspec 'AdZonePlatformTencent' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.source_files = 'ADZone/AdZonePlatformTencent/lib/*.{h,m}'
@@ -113,7 +113,7 @@ Pod::Spec.new do |s|
       ss.libraries = 'z', 'xml2'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   end
-  
+
   s.subspec 'AdZonePlatformTouTiao' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.resource  = 'ADZone/AdZonePlatformTouTiao/lib/BUAdSDK.bundle'
@@ -124,14 +124,14 @@ Pod::Spec.new do |s|
       ss.libraries = 'z', 'resolv.9', 'c++', 'sqlite3'
       ss.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   end
-  
+
   s.subspec 'AdZonePlatformUnity' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.vendored_frameworks =
       'ADZone/AdZonePlatformUnity/lib/UnityAds.framework',
       'ADZone/AdZonePlatformUnity/AdZonePlatformUnity.framework'
   end
-  
+
   s.subspec 'AdZonePlatformVungle' do |ss|
       ss.dependency 'ADZone/AdZoneAggregate'
       ss.vendored_frameworks =
